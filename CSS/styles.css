@@ -1,0 +1,419 @@
+html{
+  color: grey;
+  font-family: 'Public Sans', sans-serif;
+}
+body{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  width: 375px;
+}
+h1, h2, h3{
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+}
+h5{
+  font-weight: 300;
+  font-size: .65rem
+}
+p {
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+a{
+  text-decoration:none;
+}
+
+
+/* Section stylings */
+.menu, .header, .why-us, .footer{
+  padding: 40px 20px 50px;
+}
+.menu{
+  z-index: 3;
+}
+.header, .articles{
+  background-color: hsl(0, 0%, 98%);
+}
+.header{
+padding-top: 0;
+}
+.why-us{
+background-color: hsl(220, 16%, 96%);
+}
+.articles{
+  padding: 50px 0;
+}
+.footer{
+  background-color: hsl(233, 26%, 24%);
+  color: white;
+  text-align: center;
+}
+
+/* Nav menu */
+.menu {
+  background-color: white;
+  position: relative;
+  z-index: 4;
+}
+.menu-container {
+  background-color: white;
+  border-radius: 5px;
+  left: 30px;
+  padding: 20px 0;
+  position: absolute;
+  text-align: center;
+  top: 110px;
+  width: 320px;
+  z-index: 5;
+}
+#background-fade {
+  background: rgb(59,56,93);
+  background: linear-gradient(180deg, rgba(59,56,93,0.5) 0%, rgba(9,9,70,0.25121951219512195) 65%, rgba(0,212,255,0) 100%);
+  height: 700px;;
+  left: 0;
+  position: absolute;
+  top: 90px;
+  width: 375px;
+}
+.menu-hide{
+  display: none;
+}
+.menu-button {
+  background-color: white;
+  border-style: none;
+  color: hsl(233, 26%, 24%);
+  display: block;
+  font-size: 1.15rem;
+  margin: 25px auto;
+}
+#menu-logo{
+  position: absolute;
+  left: 10px;
+}
+#menu-burger{
+  position: absolute;
+  right: 10px;
+}
+#menu-close{
+  position: absolute;
+  right: 10px;
+}
+
+/* Header Images */
+.img-wrapper {
+  height: 350px;
+  left: -20px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+#bg-splash, #mockups{
+  left: 0;
+  position: absolute;
+}
+#bg-splash{
+  top: -35px;
+  z-index: 1;
+}
+#mockups{
+  top:-135px;
+  max-width: 375px;
+  z-index: 2;
+}
+
+/* Header */
+#h1-header{
+  font-size: 2.5rem;
+  margin: 0;
+}
+#p-header {
+  font-size: .9rem;
+  letter-spacing: 1;
+  padding: 0;
+}
+
+/* Why Us */
+.grid-1, .grid-2, .footer-menu {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/* Card stylings */
+.icons{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cell2 {
+  border-radius: 10px;
+  background-color: white;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  width: 335px;
+}
+.img-article{
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 335px;
+}
+.cell-img2{
+  display: flex;
+  position: relative;
+  height: 200px;
+}
+.cell-body2{
+  padding: 20px 30px ;
+}
+.article-p{
+  font-size: .85rem;
+  padding: 0;
+}
+.h3-p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.art-link {
+  color: black;
+}
+.art-link:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+/* Footer */
+.foot-div {
+  margin: 10px;
+}
+.foot-icon{
+  margin: 10px;
+}
+.foot-logo{
+  fill: white;
+}
+.copyright {
+  color: grey;
+  font-size: .8rem;
+}
+.spacer {
+  margin: 20px;
+}
+.foot-link {
+  color: white;
+}
+.foot-link:hover{
+  color: hsl(136, 65%, 51%);
+}
+/* Other */
+.request{
+  background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border: 0;
+  border-radius: 25px;
+  color: white;
+  font-size: .8rem;
+  height: 35px;
+  width: 150px;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px; text-align: center;
+ }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+ }
+
+/* Desktop */
+@media (min-width: 1440px){
+  body{
+    width: 1440px;
+  }
+  h2 {
+      font-size: 2.55rem;
+      text-align: left;
+    }
+  p {
+      font-size: 1rem;
+      text-align: left;
+    }
+  /* Menu */
+  .menu{
+    height: 34px;
+    padding: 30px 30px 10px 30px;
+  }
+  .menu-container{
+    border-radius: 5px;
+    height: 64px;
+    left: 500px;
+    padding: 0;
+    text-align: left;
+    top: 0;
+    width: 700px;
+    display: inline;
+    position: absolute;
+    z-index: 0;
+  }
+  .menu-button{
+    display: inline;
+    height: 45px;
+    z-index: 0;
+  }
+  .menu-button:hover {
+    border-bottom: 5px solid;
+    border-color: hsl(136, 65%, 51%);
+  }
+  #menu-logo{
+    display: inline;
+    margin-left: 100px;
+    z-index: 0;
+  }
+  #menu-request{
+    margin-left: 200px;
+    display: inline;
+    z-index: 0;
+  }
+
+  /* Header*/
+  .header {
+    height: 700px;
+    padding: 0;
+    position: relative;
+  }
+  .img-wrapper {
+    height: 800px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  #bg-splash, #mockups{
+    position: absolute;
+  }
+  #bg-splash{
+    top: -255px;
+    left: 600px;
+    z-index: 1;
+  }
+  #mockups{
+    top:-35px;
+    left: 850px;
+    max-width: 700px;
+    z-index: 2;
+  }
+
+.header-text {
+  display: inline;
+  left: 170px;
+  position: absolute;
+  text-align: left;
+  top: 200px;
+  width: 400px;
+}
+  #h1-header{
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  #p-header {
+    font-size: .9rem;
+    letter-spacing: 1;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  /* Why Us */
+  .why-us {
+    padding: 20px 0;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+  }
+  .why-us-text{
+    left: 170px;
+    position: relative;
+    top: 100px;
+    width: 600px;
+  }
+  .grid-1, .grid-2 {
+    grid-template-columns: auto auto auto auto;
+    position: inherit;
+    width: 1120px;
+  }
+  .grid-1{
+    margin: 100px auto 0 170px;
+  }
+  .grid-2{
+    margin: 0 auto 0 170px;
+  }
+  .cell1, .cell2{
+    width: 260px;
+  }
+  .cell1 {
+    height: 334px;
+  }
+  #why-us-h2 {
+    margin-bottom: 0;
+  }
+
+  /* Articles */
+  #articles-h2 {
+    margin: 34px 170px 0;
+  }
+  .img-article{
+    width: 260px;
+  }
+  .cell-body2{
+    padding: 20px 30px ;
+  }
+  .article-p{
+    font-size: .85rem;
+    padding: 0;
+  }
+  .h3-p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+/* Footer */
+  .footer {
+    height: 100px;
+    padding-left: 170px;
+    position: relative;
+    text-align: left;
+  }
+  .foot-icon {
+    fill: white;
+  }
+  .foot-icon:hover{
+    fill: hsl(136, 65%, 51%);
+  }
+  .footer-menu {
+    grid-template-columns: auto auto;
+    left: 470px;
+    position: absolute;
+    top: 20px;
+    width: 500px;
+  }
+  .foot-request-container {
+    position: absolute;
+    right: 170px;
+    top: 20px;
+  }
+  #foot-request {
+    margin-left: 40px;
+    margin-right: 0;
+    position: relative;
+    right: 0;
+  }
+  #easybank-footer {
+    margin-bottom: 50px;
+  }
+
+  /* Other */
+  .request:hover {
+    opacity: 0.6;
+  }
+}
